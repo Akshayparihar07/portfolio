@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <script src="script.js"></script>
     <title>My Portfolio</title>
 </head>
@@ -13,9 +14,9 @@
     <nav id="desktop-nav">
         <div class="social-icons">
             <img src="./assets/github.png" alt="github  logo"
-                onclick="location.href='https://github.com/Akshayparihar07'">
-            <img src="./assets/linkedin.png" alt="linkedin logo"
-                onclick="location.href='https://www.linkedin.com/in/akshayparihar'">
+            onclick="window.open('https://www.github.com/Akshayparihar07', '_blank')">
+            <img src="./assets/linkedin.png" alt="github  logo"
+            onclick="window.open('https://www.linkedin.com/in/akshayparihar', '_blank')">
         </div>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -56,11 +57,11 @@
 
     <section id="about">
         <h1 class="title">About</h1>
-        <p>I'm a Frontend Focused Web Developer building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects </p>
+        <p>I'm a Full-stack Web Developer Continously building projects and learning new things in tech.</p>
 
-            <p>I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my <a href="https://www.linkedin.com/in/akshayparihar" target="_blank">Linkedin</a> and Instagram where I post useful content related to Web Development and Programming</p>
+            <p>I enjoy solving problems related to Data Structures and Algorithms on <a href="https://www.leetcode.com/Akshayparihar" target="_blank">LeetCode</a>. Sometimes I also write blogs on <a href="https://medium.com/@Akshayparihar" target="_blank">Medium</a> and share content related to the stuff that I have learned. Feel free to Connect or Follow me on my <a href="https://www.linkedin.com/in/akshayparihar" target="_blank">LinkedIn</a> and <a href="https://twitter.com/Akshayparihar07" target="_blank">Twitter</a> where I post useful content related to Web Development, Data Structures and Algorithms and Programming</p>
             
-            <p>I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
+            <p>I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <a href="#contact">Contact me</a>. If you wanna know more about my work, feel free snoop through my <a href="https://github.com/Akshayparihar07" target="_blank">Github Account</a> and my <a href="#footer">Other Social Profiles</a></p>
             <a href="./assets/resume.pdf" download class="button"><button class="download-button">Download Resume</button></a>
     </section>
 
@@ -173,44 +174,37 @@
     </section>
 
     <section id="contact">
-        <h1 class="title">Reach Me out</h1>
-        <div class="contact-icons">
-            <button class="icon" onclick="location.href='mailto:pariharakshay40@gmail.com'">
-                <img src="assets/gmail.png" alt="">
-                <p></p>
-            </button>
-            <button class="icon" onclick="location.href='tel:+918003207189'">
-                <img src="assets/phone.png" alt="">
-            </button>
+        <h1 class="title">Get in Touch with me</h1>
+    <div class="contact-container">
+        <div class="contact-div">
+            <a href="mailto:pariharakshay40@gmail.com" target="_blank"><img src="./assets/gmail.png" alt="Akshay's Mail"></a>
+            <a href="mailto:pariharakshay40@gmail.com">pariharakshay40@gmail.com</a>
         </div>
+        <div class="contact-div">
+            <p><a href="tel:+918003207189" target="_blank"><img src="./assets/phone.png" alt="Akshay's Mail"></a></p>
+            <a href="tel:+918003207189">+91 8003207189</a>
+        </div>
+    </div>
     </section>
-    
+
     <footer id="footer">
-        <div class="contact-section">
-            <a href="mailto:pariharakshay40@gmail.com" target="_blank"><p>pariharakshay40@gmail.com</p></a>
-            <a href="tel:+918003207189" target="_blank"><p>+91 8003207189</p></a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
         </div>
-        <div class="socials-section">
-            <a href="https://www.github.com/Akshayparihar07" target="_blank"><p>GitHub</p></a>
-            <a href="https://www.linkedin.com/in/akshayparihar" target="_blank"><p>LinkedIn</p></a>
-            <a href="https://www.leetcode.com/Akshayparihar" target="_blank"><p>LeetCode</p></a>
-            <a href="https://www.hackerrank.com/profile/Akshayparihar" target="_blank"><p>HackerRank</p></a>
-        </div>
-        <div class="social-icons">
+        <div class="footer-socials">
             <img src="./assets/github.png" alt="github  logo"
-                onclick="location.href='https://github.com/Akshayparihar07'">
-            <img src="./assets/linkedin.png" alt="linkedin logo"
-                onclick="location.href='https://www.linkedin.com/in/akshayparihar'">
-                <img src="./assets/twitter.png" alt="linkedin logo"
-                onclick="location.href='https://www.linkedin.com/in/akshayparihar'">
-            <img src="./assets/medium.png" alt="linkedin logo"
-                onclick="location.href='https://www.linkedin.com/in/akshayparihar'">
-        </div>
-        <div class="nav-section">
-            <a href="#home"><p>Home</p></a>
-            <a href="#about"><p>About</p></a>
-            <a href="#projects"><p>Projects</p></a>
-            <a href="#contact"><p>Contact</p></a>
+            onclick="window.open('https://www.github.com/Akshayparihar07', '_blank')">
+            <img src="./assets/linkedin.png" alt="github  logo"
+            onclick="window.open('https://www.linkedin.com/in/akshayparihar', '_blank')">
+            <img src="./assets/medium.png" alt="github  logo"
+            onclick="window.open('https://www.medium.com/@Akshayparihar', '_blank')">
+            <img src="./assets/leetcode.png" alt="github  logo"
+            onclick="window.open('https://www.leetcode.com/Akshayparihar', '_blank')">
+            <img src="./assets/twitter.png" alt="github  logo"
+            onclick="window.open('https://www.twitter.com/Akshayparihar07', '_blank')">
         </div>
     </footer>
 </body>
+</html>

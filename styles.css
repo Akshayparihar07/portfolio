@@ -10,8 +10,15 @@ body {
     background-color: #1d1d20;
     color: #d1d1d1;
     transition: width 0.3s ease-in-out, height 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    margin: 0px;
+    padding: 0px;
 }
-
+.title {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
 #desktop-nav {
     position: -webkit-sticky;
     position: sticky;
@@ -51,14 +58,11 @@ body {
 
 #desktop-nav ul li a:hover {
     cursor: pointer;
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
-    font-weight: 500;
+    text-decoration:underline;
+    text-underline-offset: 0.7rem;
+    color: rgb(115, 105, 1);
 }
 
-#desktop-nav ul li:last-child {
-    margin-right: 0;
-}
 
 .social-icons {
     display: flex;
@@ -231,32 +235,28 @@ body {
     font-weight: 800;
 }
 .download-button{
+    color: #2d2d2d;
     align-items: center;
     justify-self: center;
     margin-top: 2rem;
     width: 250px;
     border-radius: 10px;
     padding: 1rem;
-    background-color: rgb(179, 213, 255);
+    background-color: rgb(94, 147, 169);
     box-shadow: rgba(55, 55, 55, 0.35) 0px 5px 15px;
     border-style: none;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     transition: 0.3s ease;
 }
 
 .download-button:hover{
-    background-color: rgb(114, 122, 199);
+    background-color: rgb(90, 99, 187);
     color: #d1d1d1;
     cursor: pointer;
 }
 
-.title {
-    text-align: center;
-    font-weight: 600;
-    margin-bottom: 3rem;
-    font-size: 35px;
-}
+
 h2{
     font-weight: 500;
     font-size: 2rem;
@@ -323,6 +323,7 @@ p {
 
 .btn:hover{
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-color: rgb(173,145,120);
     transform: scale(1.1);
     border: none;
     cursor: pointer;
@@ -388,55 +389,65 @@ p {
     font-size: 1.5rem;
 }
 
-#contact {
-    text-align: center;
-    padding: 50px 0;
+#contact{
+    display: flexbox;
+    justify-content: space-evenly;
 }
-
-.contact-icons {
+.contact-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
 }
-
-.icon {
-    background-color: #f0f0f0;
-    border: none;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: transform 0.20s ease;
-    background-color: #1d1d20;
+.contact-div{
+    display: grid;
+    text-align: center;
 }
-
-.icon img {
-    width: 70px;
+#contact a{
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+    color: #d1d1d1;
+    transition:0.10s ease;
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+#contact a:hover{
+    transform:scale(1.1);
+    color:aliceblue;
+}
+#contact img{
     height: 70px;
+    transition: 0.20s ease;
 }
-
-.icon:hover {
-    transform: scale(1.5);
+#contact img:hover{
+    transform:scale(1.2);
 }
 
 #footer{
+    background-color:#1a1a1a;
     display: flex;
+    padding: 10px;
+    padding: 30px;
+    margin-top: 5rem;
+    text-align: center;
     justify-content: space-around;
-    align-items: center;
-    background-color: #1a1a1a;
-    padding: 50px;
 }
-
 #footer a{
-    text-decoration: none;
-    color: #f0f0f0;
-    transition: 0.3s ease;
-}
-#footer a:hover{
-    text-decoration: none;
-    color: #f0f0f0;
     text-decoration: underline;
-    text-underline-offset: 0.4rem;
+    color: #d1d1d1;
+    text-underline-offset: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
 }
-
+#footer img{
+    height: 40px;
+    margin: 2rem;
+}
+.nav-links{
+    display: grid;
+}
+.footer-socials{
+    display: flex;
+    align-items: center;
+}
+#footer img:hover{
+    cursor: pointer;
+}
