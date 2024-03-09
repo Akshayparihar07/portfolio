@@ -1,80 +1,60 @@
-/* Original styles */
-
-/* Additions for responsiveness */
-@media only screen and (max-width: 1200px) {
-    body {
-        padding: 0 20px; /* Adjust as needed */
-    }
-    .profile-picture img {
-        width: 300px; /* Adjust as needed */
-    }
-    .profile-content {
-        margin-left: 5rem; /* Adjust as needed */
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .title {
-        font-size: 2.5rem; /* Adjust as needed */
-    }
-    #desktop-nav {
-        height: auto;
-        padding: 20px;
-    }
-    #desktop-nav ul li {
-        margin: 1.5rem; /* Adjust as needed */
-    }
-    .profile-content {
-        margin-left: 2rem; /* Adjust as needed */
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .profile-picture img {
-        width: 200px; /* Adjust as needed */
-    }
-    .profile-content {
-        margin-left: 1rem; /* Adjust as needed */
-    }
-    .project-description {
-        margin-left: 0; /* Adjust as needed */
-    }
-}
 
 @media only screen and (max-width: 600px) {
-    .profile-picture img {
-        width: 150px; /* Adjust as needed */
+    .title{
+        font-size: 30px;
+        margin: 10px;
     }
-    .profile-content {
-        margin-left: 0; /* Adjust as needed */
+    #home{
+        margin: 20px;
+        padding-left: 20px;
     }
-    #home {
-        flex-direction: column;
-        align-items: center;
-        margin-right: 0;
-        margin-left: 0;
-        margin-top: 3rem; /* Adjust as needed */
+    .profile-text-p1{
+        font-size: 10px;
     }
-    .project-container {
-        flex-direction: column;
+    .profile-text-p2{
+        font-size: 10px;
     }
-}
-
-@media only screen and (max-width: 400px) {
-    .profile-picture img {
-        width: 120px; /* Adjust as needed */
+    .name{
+        font-size: 20px;
     }
-    .profile-content {
-        margin-left: 0; /* Adjust as needed */
+    #home img{
+        width: 100px;
     }
-    .project-image img {
-        width: 300px; /* Adjust as needed */
-        height: 300px; /* Adjust as needed */
+    .resume-button{
+        height: 40px;
+        font-size: 0.9rem;
     }
-    #about,
-    #stats,
-    #contact {
-        margin-left: 2rem; /* Adjust as needed */
-        margin-right: 2rem; /* Adjust as needed */
+    #about {
+      padding: 15px;
+      margin: 20px;
+      margin-top: 50px;
+    }
+    #about p{
+        font-size: 13px;
+        margin: 0px;
+    }
+    .button {
+      display: block;
+      margin-top: 0px;
+      text-align: center;
+    }
+  
+    .download-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      width: 170px;
+      height: 40px; 
+      font-size: smaller;
+    }
+    #projects{
+        margin: 10px;
+    }
+    .project-container{
+        display: grid;
+        margin: 10px;
+    }
+    .project-image img{
+        width: 300px;
+        height: 300px;
     }
 }
