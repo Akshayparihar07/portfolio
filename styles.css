@@ -160,19 +160,17 @@ body {
 
 #home {
     display: flex;
-    justify-content: space-between;
-    margin-right: 9rem;
-    padding-left: 4rem;
+    justify-content: space-around;
+    padding: 3rem;
     align-items: center;
-    margin-top: 7rem;
     align-items: center;
-    padding-bottom: 2rem;
 }
 
 .profile-picture img {
-    width: 350px;
+    max-height: 450px;
+    max-width: 550;
     border-radius: 50%;
-    margin-right: 3rem;
+    margin: 3rem;
 }
 
 .profile-content {
