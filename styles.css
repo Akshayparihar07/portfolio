@@ -340,13 +340,12 @@ p {
     margin-top: 10rem;
 }
 
-.skills-container {
-    display: flexbox;
-}
 
-.skills-div {
+.skills-contianer {
+    padding: 0px 100px;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: 40px;
 }
 
@@ -362,8 +361,8 @@ p {
 }
 
 .skills-icon img {
-    max-width: 170px;
-    max-height: 170px;
+    max-width: 200px;
+    max-height: 200px;
     margin: 1rem;
     background-color: #1a1a1a;
     padding: 3rem;
@@ -372,14 +371,17 @@ p {
 }
 
 #stats{
-    display: flexbox;
+    display: block;
+    flex-wrap: wrap;
     margin-top: 10rem;
     padding: 3rem;
     align-items: center;
     text-align: center;
 }
 #stats div{
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin: 4rem;
     align-items: center;
     text-align: center;
