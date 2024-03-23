@@ -333,42 +333,37 @@ p {
     cursor: pointer;
 }
 
-#skills {
+#skills{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 10rem;
 }
-
-
-.skills-contianer {
-    padding: 0px 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 40px;
+.skills-container {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 30px;
 }
 
 .skills-icon {
-    margin: 0 10px;
-    display: flexbox;
-    align-items: center;
+    border-radius: 20px;
+    padding: 30px 0px 0px 0px;
     text-align: center;
-}
-.skills-icon:hover {
-    box-shadow: rgba(36, 240, 255, 0.35) 0px 5px 15px;
-    border-radius: 10%;
+    transition: 0.50s ease;
 }
 
 .skills-icon img {
-    max-width: 200px;
-    max-height: 200px;
-    margin: 1rem;
-    background-color: #1a1a1a;
-    padding: 3rem;
-    border-radius: 20%;
-    border-style: none;
+    border-radius: 30px;
+    padding: 40px;
+    background-color:#1a1a1a;
+    max-width: 50%; 
 }
+.skills-icon:hover{
+    box-shadow: rgba(139, 16, 255, 0.07) 0px 1px 2px, rgba(255, 87, 87, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(98, 80, 255, 0.07) 0px 8px 16px, rgba(213, 99, 255, 0.07) 0px 16px 32px, rgba(205, 89, 255, 0.07) 0px 32px 64px;
+}
+
 
 #stats{
     display: block;
