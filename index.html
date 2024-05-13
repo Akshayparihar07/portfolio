@@ -23,16 +23,19 @@
                   </ul>
             </div>
       </nav>
-      
+
       <nav class="hamburger-nav">
-            <img src="./assets/logo.png" alt="logo" class="logo">
+            <img src="./assets/logo.png" alt="logo" class="logo" onclick="location.href='#hero'">
             <i class="ri-menu-3-line open-hamburger"></i>
       </nav>
       <div class="hamburger-menu">
             <i class="ri-close-large-line close-hamburger"></i>
-            <span class="nav-hover">About</span>
-            <span class="nav-hover">Projects</span>
-            <span class="nav-hover">Contact</span>
+            <span class="nav-hover"
+                  onclick="location.href='#about' ; document.querySelector('.hamburger-menu').style.right = '-1500px';">About</span>
+            <span class="nav-hover"
+                  onclick="location.href='#projects'; document.querySelector('.hamburger-menu').style.right = '-1500px';">Projects</span>
+            <span class="nav-hover"
+                  onclick="location.href='#contact'; document.querySelector('.hamburger-menu').style.right = '-1500px';">Contact</span>
       </div>
 
       <main id="main">
@@ -40,12 +43,19 @@
                   <p>Hi ! I am,</p>
                   <h1 class="heading">Akshay Parihar</h1>
                   <h2 class="heading">I build things for web</h2>
-                  <p>An Intermediate Software Developer Engaged in Providing Seamless User Experience & making lives easier by Introducing new User Friendly Products.</p>
-                  <button class="btn">View Resume</button>
-                  <div class="flex"><i class="ri-github-fill hover-link"></i>
-                        <i class="ri-linkedin-fill hover-link"></i>
-                        <i class="ri-twitter-fill hover-link"></i>
-                        <i class="ri-codepen-fill hover-link"></i>
+                  <p>An Intermediate Software Developer Engaged in Providing Seamless User Experience & making lives
+                        easier by Introducing new User Friendly Products.</p>
+                  <button class="btn"
+                        onclick="window.open('https://drive.google.com/file/d/1Ub4FUowSdC0go4FxZFQHIQv576_baUkN/view?usp=drive_link')">View
+                        Resume</button>
+                  <div class="flex"><i class="ri-github-fill hover-link"
+                              onclick="window.open('https://www.github.com/Akshayparihar07')"></i>
+                        <i class="ri-linkedin-fill hover-link"
+                              onclick="window.open('https://www.linkedin.com/in/akshayparihar/')"></i>
+                        <i class="ri-twitter-fill hover-link"
+                              onclick="window.open('https://twitter.com/Akshayparihar07')"></i>
+                        <i class="ri-medium-fill hover-link"
+                              onclick="window.open('https://akshayparihar.hashnode.dev/')"></i>
                   </div>
             </section>
 
@@ -102,8 +112,10 @@
                         <div class="project-content flex">
                               <div class="project-title flex">
                                     <h1>To Do CRUD App</h1>
-                                    <span class="project-links flex"><i class="ri-github-fill hover-link"></i><i
-                                                class="ri-share-box-fill hover-link"></i></span>
+                                    <span class="project-links flex"><i class="ri-github-fill hover-link"
+                                                onclick="window.open('https://github.com/Akshayparihar07/ToDo_app_Django')"></i><i
+                                                class="ri-share-box-fill hover-link"
+                                                onclick="window.open('https://drive.google.com/file/d/1isX114jMPGnhONf8AUq_0GRnMlgWycx9/view?usp=drive_link')"></i></span>
                               </div>
                               <div class="project-desc">A full stack todo list application that allows users to perfrom
                                     CRUD operations and Provides client side user authentication features such as Login,
@@ -114,12 +126,14 @@
 
                   <div class="project-container container flex">
                         <div class="image-container"><img src="./assets/projectimg/mazesolver.png"
-                                    alt="To Do App image"></div>
+                                    alt="Maze Solver image"></div>
                         <div class="project-content flex">
                               <div class="project-title flex">
                                     <h1>Terminal Based Maze Solver</h1>
-                                    <span class="project-links flex"><i class="ri-github-fill hover-link"></i><i
-                                                class="ri-share-box-fill hover-link"></i></span>
+                                    <span class="project-links flex"><i class="ri-github-fill hover-link"
+                                                onclick="window.open('https://github.com/Akshayparihar07/Maze_solver')"></i>
+                                          <i class="ri-share-box-fill hover-link"
+                                                onclick="window.open('https://drive.google.com/file/d/1Nm83wMVSe6AUXAbrJ_7l7OKbrf49FzIn/view')"></i></span>
                               </div>
                               <div class="project-desc">A Python Script that Highlights my hands on experience with DSA
                                     and Complex Problem solving using recursion and Matrix Manipulation</div>
@@ -129,13 +143,16 @@
                   </div>
 
                   <div class="project-container container flex">
-                        <div class="image-container"><img src="./assets/projectimg/typingapp.png" alt="To Do App image">
+                        <div class="image-container"><img src="./assets/projectimg/typingapp.png"
+                                    alt="Typing Project image">
                         </div>
                         <div class="project-content flex">
                               <div class="project-title flex">
                                     <h1>Typing Speed Test app</h1>
-                                    <span class="project-links flex"><i class="ri-github-fill hover-link"></i><i
-                                                class="ri-share-box-fill hover-link"></i></span>
+                                    <span class="project-links flex"><i class="ri-github-fill hover-link"
+                                                onclick="window.open('https://github.com/Akshayparihar07/TypingSpeedTester')"></i><i
+                                                class="ri-share-box-fill hover-link"
+                                                onclick="window.open('https://akshayparihar07.github.io/TypingSpeedTester/')"></i></span>
                               </div>
                               <div class="project-desc">A web application for practicing typing speed and accuracy.
                                     Users can start a timed typing test, type the displayed random quote, and upon
@@ -151,8 +168,10 @@
                         <div class="project-content flex">
                               <div class="project-title flex">
                                     <h1>Sudoku Solver</h1>
-                                    <span class="project-links flex"><i class="ri-github-fill hover-link"></i><i
-                                                class="ri-share-box-fill hover-link"></i></span>
+                                    <span class="project-links flex"><i class="ri-github-fill hover-link"
+                                                onclick="window.open('https://github.com/Akshayparihar07/Sudoku_game')"></i><i
+                                                class="ri-share-box-fill hover-link"
+                                                onclick="window.open('https://akshayparihar07.github.io/Sudoku_game/')"></i></span>
                               </div>
                               <div class="project-desc">A Web Based Implementation of the classic sudoku game using
                                     backtracking algorithm and matrix manipulation</div>
@@ -160,10 +179,94 @@
                               </div>
                         </div>
                   </div>
+
+
+                  <h4>Other Note Worthy Projects</h4>
+                  <div class="other-projects-container">
+                        <div class="flex"><span class="flex"><i class="ri-folder-6-fill"></i><i
+                                          class="ri-share-circle-line hover-link"
+                                          onclick="window.open('https://github.com/Akshayparihar07/NewsApp')"></i></span>
+                              <h2>NetPress News</h2>
+                              <p>A News Application allows users to browse the latest news articles across various
+                                    categories such as world, finance, politics, technology, business, crypto, sports,
+                                    and education.</p>
+                              <span class="flex">
+                                    <p>HTML</p>
+                                    <p>CSS</p>
+                                    <p>JavaScript</p>
+                              </span>
+                        </div>
+                        <div class="flex"><span class="flex"><i class="ri-folder-6-fill"></i><i
+                                          class="ri-share-circle-line hover-link"
+                                          onclick="window.open('https://github.com/Akshayparihar07/File_Encoding_and_Decoding_using_Huffman_Coding')"></i></span>
+                              <h2>Huffman Coding</h2>
+                              <p>A file Encoding and Decoding Algorithm Showing behind the scenes working of file
+                                    compression and decompression</p>
+                              <span class="flex">
+                                    <p>Python</p>
+                                    <p>DSA</p>
+                              </span>
+                        </div>
+                        <div class="flex"><span class="flex"><i class="ri-folder-6-fill"></i><i
+                                          class="ri-share-circle-line hover-link"
+                                          onclick="window.open('https://github.com/Akshayparihar07/Multi-clipboard')"></i></span>
+                              <h2>Python-JSON Clipboard</h2>
+                              <p>A Python command-line utility that allows you to save multiple pieces of text to their
+                                    clipboard under unique keys</p>
+                              <span class="flex">
+                                    <p>Python</p>
+                              </span>
+                        </div>
+                        <div class="flex"><span class="flex"><i class="ri-folder-6-fill"></i><i
+                                          class="ri-share-circle-line hover-link"
+                                          onclick="window.open('https://github.com/Akshayparihar07/Instagram_User_Data_Scrapper')"></i></span>
+                              <h2>InstaGram User Data Scrapper</h2>
+                              <p>Scrappe Data of any Instagram User using This Script.</p>
+                              <span class="flex">
+                                    <p>Python</p>
+                                    <p>Instaloader</p>
+                              </span>
+                        </div>
+                        <div class="flex"><span class="flex"><i class="ri-folder-6-fill"></i><i
+                                          class="ri-share-circle-line hover-link"
+                                          onclick="window.open('https://github.com/Akshayparihar07/SnakeGame')"></i></span>
+                              <h2>Snake Game</h2>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati laborum labore
+                                    voluptate maiores natus beatae aperiam delectus ex, quo commodi culpa omnis,
+                                    similique adipisci sit?</p>
+                              <span class="flex">
+                                    <p>Python</p>
+                                    <p>TutrleGraphics</p>
+                              </span>
+                        </div>
+                        <div class="flex"><span class="flex"><i class="ri-folder-6-fill"></i><i
+                                          class="ri-github-fill hover-link"
+                                          onclick="window.open('https://akshayparihar07.github.io/RockPaperScissors/')"></i>
+                                    <i class="ri-share-circle-line hover-link"
+                                          onclick="window.open('https://github.com/Akshayparihar07/RockPaperScissors')"></i></span>
+                              <h2>Rock Paper Scissors</h2>
+                              <p>Burn time by Playing Rock Paper Scissors with your Computer</p>
+                              <span class="flex">
+                                    <p>HTML</p>
+                                    <p>CSS</p>
+                                    <p>JavaScript</p>
+                              </span>
+                        </div>
+
+                  </div>
+
+
                   <p class="hover-link"
-                        onclick="window.open('https://www.github.com/Akshayparihar07?tab=repositories', '_blank')">View
+                        onclick="window.open('https://www.github.com/Akshayparihar07?tab=repositories')">View
                         Full Project Archive<i class="ri-arrow-right-up-line"></i></p>
             </section>
+
+
+
+
+
+
+
 
             <section id="stats" class="flex">
                   <h1 class="section-heading">Statistics...</h1>
@@ -180,13 +283,20 @@
 
             <section id="contact" class="flex">
                   <h1>Get in Touch</h1>
-                  <p>I'm always open to discussing new projects, creative ideas, or opportunities to collaborate. Whether you have a question, need advice, or just want to say hello, feel free to reach out to me. I'll get back to you as soon as possible.</p>
-                  <button class="btn" onclick="window.open('mailto:pariharakshay40@gmail.com', '_blank')">Say Hello!</button>
+                  <p>I'm always open to discussing new projects, creative ideas, or opportunities to collaborate.
+                        Whether you have a question, need advice, or just want to say hello, feel free to reach out to
+                        me. I'll get back to you as soon as possible.</p>
+                  <button class="btn" onclick="window.open('mailto:pariharakshay40@gmail.com', '_blank')">Say
+                        Hello!</button>
                   <div>
-                        <i class="ri-github-fill hover-link"></i>
-                        <i class="ri-linkedin-fill hover-link"></i>
-                        <i class="ri-twitter-fill hover-link"></i>
-                        <i class="ri-codepen-fill hover-link"></i>
+                        <i class="ri-github-fill hover-link"
+                              onclick="window.open('https://www.github.com/Akshayparihar07')"></i>
+                        <i class="ri-linkedin-fill hover-link"
+                              onclick="window.open('https://www.linkedin.com/in/akshayparihar/')"></i>
+                        <i class="ri-twitter-fill hover-link"
+                              onclick="window.open('https://twitter.com/Akshayparihar07')"></i>
+                        <i class="ri-medium-fill hover-link"
+                              onclick="window.open('https://akshayparihar.hashnode.dev/')"></i>
                   </div>
             </section>
       </main>

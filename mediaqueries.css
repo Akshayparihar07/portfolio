@@ -83,7 +83,7 @@
       .btn {
             padding: 15px 30px;
             font-size: 13px;
-      box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px, rgba(255, 255, 255, 0.15) 0px 1px 3px 1px;
+            box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px, rgba(255, 255, 255, 0.15) 0px 1px 3px 1px;
       }
 
       .heading {
@@ -97,67 +97,109 @@
       .project-container {
             opacity: 1;
       }
-      
+
+      .other-projects-container {
+            grid-template-columns: repeat(2, 1fr);
+      }
+
+
 }
 
 @media all and (max-width:820px) {
-      section{margin:0;}
-      .hamburger-nav{
+      section {
+            margin: 0;
+      }
+
+      .hamburger-nav {
             height: 10vh;
             padding-inline: 30px;
       }
-      #main{
+
+      #main {
             width: 95%
       }
-      .section-heading{
+
+      .section-heading {
             font-size: 22px;
             font-weight: 600;
       }
-      #hero{
+
+      #hero {
             padding-left: 20px;
       }
-      .heading{
+
+      .heading {
             font-size: 50px;
       }
-      #hero>p{
+
+      #hero>p {
             max-width: 90%;
             font-size: 12px;
       }
-      #about{
+
+      #about {
             flex-direction: column-reverse;
       }
-      #about>img{
+
+      #about>img {
             height: 300px;
       }
-      #about>div{
+
+      #about>div {
             max-width: 90%;
       }
-      #skills>div{
+
+      #skills>div {
             grid-template-columns: repeat(2, 1fr);
       }
-      .project-container{
+
+      .project-container {
             flex-direction: column;
       }
-      .project-title{
+
+      .project-title {
             gap: 20px;
       }
-      .image-container>img{
+
+      .image-container>img {
             height: 200px;
             width: 370px;
       }
-      #projects>p{
+
+      .other-projects-container {
+            gap: 15px;
+      }
+
+      .other-projects-container>div {
+            font-size: 55%;
+            padding: 10%;
+      }
+
+      .other-projects-container span {
+            width: 100%;
+      }
+
+      #projects>p {
             text-align: center;
             font-size: 18px;
       }
-      .stats-container{
+
+      .stats-container {
             flex-direction: column;
             margin-block: 20px;
             padding: 30px;
       }
-      #contact > h1{font-size: 40px;}
-      #contact{
+
+      #contact>h1 {
+            font-size: 40px;
+      }
+
+      #contact {
             width: 90%;
             gap: 5%;
       }
-      #contact>p{font-size: 12px;}
+
+      #contact>p {
+            font-size: 12px;
+      }
 }

@@ -25,7 +25,11 @@ html {
       --accent-color: #64ffda;
 }
 
-.hamburger-nav, .hamburger-menu{display: none;}
+.hamburger-nav,
+.hamburger-menu {
+      display: none;
+}
+
 a {
       text-decoration: none;
 }
@@ -127,9 +131,10 @@ h1 {
       font-size: 19px;
       transition: all 0.15s ease;
 }
-.nav-item:hover{
+
+.nav-item:hover {
       color: var(--accent-color);
-      text-decoration:underline;
+      text-decoration: underline;
       text-underline-offset: 8px;
 }
 
@@ -169,6 +174,7 @@ h1 {
       font-weight: 300;
       font-size: 15px;
 }
+
 #hero>div {
       gap: 20px;
       font-size: 25px;
@@ -290,6 +296,52 @@ h1 {
       text-transform: uppercase;
 }
 
+
+#projects>h4 {
+      margin-block: 45px;
+      color: var(--primary-text-color);
+      font-weight: 500;
+      font-size: 25px;
+      text-align: center;
+}
+
+.other-projects-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      justify-content: center;
+      margin-bottom: 50px;
+}
+
+.other-projects-container>div {
+      background-color: #112240;
+      padding: 12%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: start;
+      border-radius: 10px;
+      gap: 20px;
+      font-size: 70%;
+      transition: all 0.30s ease;
+      font-family: monospace, sans-serif;
+}
+
+.other-projects-container>div:hover {
+      transform: translateY(-10px);
+      color: var(--accent-color);
+}
+
+.other-projects-container i {
+      font-size: 25px;
+      color: var(--secondary-text-color);
+      font-weight: 300;
+}
+
+.other-projects-container span {
+      width: 70%;
+      justify-content: space-between;
+}
+
 #projects>p {
       text-align: end;
       transition: underline 10s ease;
@@ -301,7 +353,6 @@ h1 {
       text-underline-offset: 10px;
 }
 
-
 #stats {
       height: 100vh;
       flex-direction: column;
@@ -312,7 +363,12 @@ h1 {
       margin: 30px;
       cursor: pointer;
 }
-#stats img {cursor: pointer;width: 90%;}
+
+#stats img {
+      cursor: pointer;
+      width: 90%;
+}
+
 #contact {
       height: 100vh;
       flex-direction: column;
@@ -322,10 +378,12 @@ h1 {
       margin: auto;
       text-align: center;
 }
+
 #contact>h1 {
       font-size: 60px;
       font-weight: 800;
 }
+
 #contact>div>i {
       font-size: 25px;
       margin: 5px;
