@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="mediaqueries.css">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+      <link rel="icon" href="./assets/logo.png" type="image/x-icon">
+
+      <title>Akshay Parihar</title>
+</head>
+
+<body>
+      <nav class="navbar flex">
+            <img src="./assets/logo.png" alt="logo" class="logo" onclick="location.href='#hero'">
+            <div class="nav-links">
+                  <ul class="flex">
+                        <li class="nav-item" onclick="location.href='#about'">About</li>
+                        <li class="nav-item" onclick="location.href='#projects'">Projects</li>
+                        <li class="nav-item" onclick="location.href='#contact'">Contact</li>
+                  </ul>
+            </div>
+      </nav>
+      
+      <nav class="hamburger-nav">
+            <img src="./assets/logo.png" alt="logo" class="logo">
+            <i class="ri-menu-3-line open-hamburger"></i>
+      </nav>
+      <div class="hamburger-menu">
+            <i class="ri-close-large-line close-hamburger"></i>
+            <span class="nav-hover">About</span>
+            <span class="nav-hover">Projects</span>
+            <span class="nav-hover">Contact</span>
+      </div>
+
+      <main id="main">
+            <section id="hero" class="flex">
+                  <p>Hi ! I am,</p>
+                  <h1 class="heading">Akshay Parihar</h1>
+                  <h2 class="heading">I build things for web</h2>
+                  <p>An Intermediate Software Developer Engaged in Providing Seamless User Experience & making lives easier by Introducing new User Friendly Products.</p>
+                  <button class="btn">View Resume</button>
+                  <div class="flex"><i class="ri-github-fill hover-link"></i>
+                        <i class="ri-linkedin-fill hover-link"></i>
+                        <i class="ri-twitter-fill hover-link"></i>
+                        <i class="ri-codepen-fill hover-link"></i>
+                  </div>
+            </section>
+
+            <section id="about" class="flex">
+                  <div>
+                        <h1 class="section-heading">About Me...</h1>
+                        I enjoy solving problems related to Data Structures and Algorithms on <a
+                              href="https://www.leetcode.com/Akshayparihar" target="_blank">LeetCode</a> , Writing blogs
+                        on <a href="https://akshayparihar.hashnode.dev/" target="_blank">Hashnode</a> and sharing
+                        content related to the stuff that I have learned on my <a
+                              href="https://www.linkedin.com/in/akshayparihar" target="_blank">LinkedIn</a> and <a
+                              href="https://twitter.com/Akshayparihar07" target="_blank">Twitter</a> Feel free to
+                        Connect or Follow me, I post useful content related to Web Development, Data Structures and
+                        Algorithms and Programming <br><br>
+
+                        I'm open to Job opportunities where I can contribute, learn and grow. If you have a good
+                        opportunity that matches my skills and experience then don't hesitate to <a
+                              href="#contact">Contact me</a>. If you wanna know more about my work, feel free snoop
+                        through my <a href="https://github.com/Akshayparihar07" target="_blank">Github Account</a>
+
+                  </div>
+                  <img src="./assets/picture.jpg" alt="profile-pic">
+            </section>
+
+            <section id="skills" class="flex">
+                  <h1 class="section-heading">Tech Skills and Abilities...</h1>
+
+                  <div class="container">
+                        <div class="flex"><img src="./assets/techstack/html.png" alt="" class="tech-img">HTML
+                        </div>
+                        <div class="flex"><img src="./assets/techstack/css.png" alt="" class="tech-img">CSS
+                        </div>
+                        <div class="flex"><img src="./assets/techstack/js.png" alt="" class="tech-img">JAVASCRIPT</div>
+                        <div class="flex"><img src="./assets/techstack/python.png" alt="" class="tech-img">PYTHON</div>
+                        <div class="flex"><img src="./assets/techstack/django.png" alt="" class="tech-img">DJANGO</div>
+                        <div class="flex"><img src="./assets/techstack/git.png" alt="" class="tech-img">GIT
+                        </div>
+                        <div class="flex"><img src="./assets/techstack/typescript.png" alt=""
+                                    class="tech-img">TYPESCRIPT</div>
+                        <div class="flex"><img src="./assets/techstack/dsa.png" alt="" class="tech-img">DSA
+                        </div>
+                        <div class="flex"><img src="./assets/techstack/bootstrap.png" alt="" class="tech-img">BOOTSTRAP
+                        </div>
+                  </div>
+            </section>
+
+
+            <section id="projects">
+                  <h1 class="section-heading">Some of My Recent Projects...</h1>
+
+                  <div class="project-container container flex">
+                        <div class="image-container"><img src="./assets/projectimg/todoapp.png" alt="To Do App image">
+                        </div>
+                        <div class="project-content flex">
+                              <div class="project-title flex">
+                                    <h1>To Do CRUD App</h1>
+                                    <span class="project-links flex"><i class="ri-github-fill hover-link"></i><i
+                                                class="ri-share-box-fill hover-link"></i></span>
+                              </div>
+                              <div class="project-desc">A full stack todo list application that allows users to perfrom
+                                    CRUD operations and Provides client side user authentication features such as Login,
+                                    Logout and Signup</div>
+                              <div class="tech-stack flex"><span>Django</span><span>HTML</span><span>CSS</span></div>
+                        </div>
+                  </div>
+
+                  <div class="project-container container flex">
+                        <div class="image-container"><img src="./assets/projectimg/mazesolver.png"
+                                    alt="To Do App image"></div>
+                        <div class="project-content flex">
+                              <div class="project-title flex">
+                                    <h1>Terminal Based Maze Solver</h1>
+                                    <span class="project-links flex"><i class="ri-github-fill hover-link"></i><i
+                                                class="ri-share-box-fill hover-link"></i></span>
+                              </div>
+                              <div class="project-desc">A Python Script that Highlights my hands on experience with DSA
+                                    and Complex Problem solving using recursion and Matrix Manipulation</div>
+                              <div class="tech-stack flex"><span>HTML</span><span>CSS</span><span>JAVASCRIPT</span>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="project-container container flex">
+                        <div class="image-container"><img src="./assets/projectimg/typingapp.png" alt="To Do App image">
+                        </div>
+                        <div class="project-content flex">
+                              <div class="project-title flex">
+                                    <h1>Typing Speed Test app</h1>
+                                    <span class="project-links flex"><i class="ri-github-fill hover-link"></i><i
+                                                class="ri-share-box-fill hover-link"></i></span>
+                              </div>
+                              <div class="project-desc">A web application for practicing typing speed and accuracy.
+                                    Users can start a timed typing test, type the displayed random quote, and upon
+                                    completion or timeout, receive feedback on their typing speed and accuracy.</div>
+                              <div class="tech-stack flex"><span>HTML</span><span>CSS</span><span>JAVASCRIPT</span>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="project-container container flex">
+                        <div class="image-container"><img src="./assets/projectimg/sudoku.png" alt="To Do App image">
+                        </div>
+                        <div class="project-content flex">
+                              <div class="project-title flex">
+                                    <h1>Sudoku Solver</h1>
+                                    <span class="project-links flex"><i class="ri-github-fill hover-link"></i><i
+                                                class="ri-share-box-fill hover-link"></i></span>
+                              </div>
+                              <div class="project-desc">A Web Based Implementation of the classic sudoku game using
+                                    backtracking algorithm and matrix manipulation</div>
+                              <div class="tech-stack flex"><span>html</span><span>css</span><span>JAVASCRIPT</span>
+                              </div>
+                        </div>
+                  </div>
+                  <p class="hover-link"
+                        onclick="window.open('https://www.github.com/Akshayparihar07?tab=repositories', '_blank')">View
+                        Full Project Archive<i class="ri-arrow-right-up-line"></i></p>
+            </section>
+
+            <section id="stats" class="flex">
+                  <h1 class="section-heading">Statistics...</h1>
+                  <div class="stats-container container flex">
+                        <a href="https://leetcode.com/Akshayparihar/" target="_blank"><img
+                                    src="https://leetcard.jacoblin.cool/Akshayparihar?ext=heatmap"
+                                    alt="leetcodestats"></a>
+
+                        <a href="https://github.com/Akshayparihar07/" target="_blank"><img
+                                    src="https://github-readme-stats.vercel.app/api?username=Akshayparihar07&theme=vue-dark&hide_border=false&include_all_commits=true&count_private=true"
+                                    alt="githubstats"></a>
+                  </div>
+            </section>
+
+            <section id="contact" class="flex">
+                  <h1>Get in Touch</h1>
+                  <p>I'm always open to discussing new projects, creative ideas, or opportunities to collaborate. Whether you have a question, need advice, or just want to say hello, feel free to reach out to me. I'll get back to you as soon as possible.</p>
+                  <button class="btn" onclick="window.open('mailto:pariharakshay40@gmail.com', '_blank')">Say Hello!</button>
+                  <div>
+                        <i class="ri-github-fill hover-link"></i>
+                        <i class="ri-linkedin-fill hover-link"></i>
+                        <i class="ri-twitter-fill hover-link"></i>
+                        <i class="ri-codepen-fill hover-link"></i>
+                  </div>
+            </section>
+      </main>
+      <button onclick="location.href='#hero'" class="back-to-top"><i class="ri-arrow-up-double-line"></i></button>
+      <p style="margin: 8px; text-align: center;font-size: small;">Developed and Maintained by ©Akshay Parihar 2024</p>
+      <script src="script.js"></script>
+</body>
+
+</html>
