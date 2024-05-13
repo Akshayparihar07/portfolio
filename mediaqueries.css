@@ -154,6 +154,7 @@
             margin-block: 20px;
             padding: 30px;
       }
+      #contact > h1{font-size: 40px;}
       #contact{
             width: 90%;
             gap: 5%;
